@@ -1,0 +1,13 @@
+# bentofile.yaml (Sintaxe CORRETA)
+service: src.service
+labels:
+  owner: gabi
+  project: insurance
+models:
+  - modelo_rf:latest
+
+python:
+  requirements_txt: ./requirements.txt
+  # Adicione sua versão do Python se necessário, ex:
+  # system_packages:
+  #   - pip
