@@ -3,7 +3,7 @@ from bentoml.io import JSON
 import typing as t
 from pydantic import BaseModel
 from typing import Literal
-import pandas as pd # <-- Mantenha esta importação
+import pandas as pd 
 
 # --- 1. DEFINIÇÃO DO MODELO DE ENTRADA (Pydantic) ---
 class InsuranceInput(BaseModel):
@@ -41,5 +41,4 @@ def predict(input_data: InsuranceInput) -> t.Dict[str, float]:
     prediction_array = rf_runner.run(input_df) 
     
     # 4. Retorna o resultado
-    # Usamos .item() para garantir que o numpy float seja convertido para float padrão do Python
     return {"insurance_cost": prediction_array[0].item()}

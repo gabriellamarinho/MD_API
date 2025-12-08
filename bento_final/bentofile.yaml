@@ -1,4 +1,3 @@
-# bentofile.yaml (Sintaxe CORRETA)
 service: src.service
 labels:
   owner: gabi
@@ -8,6 +7,3 @@ models:
 
 python:
   requirements_txt: ./requirements.txt
-  # Adicione sua versão do Python se necessário, ex:
-  # system_packages:
-  #   - pip
