@@ -62,7 +62,7 @@ if st.button("Calcular Custo do Seguro", type="primary"):
             
             st.success(" Predição Recebida!")
             st.markdown(f"O **Custo Anual Estimado** do seu seguro é de:")
-            st.markdown(f"## R$ {float(cost):,.2f}")
+            st.markdown(f"## R$ {float(cost):.2f}")
             
             st.markdown("---")
             st.subheader("Dados de Entrada:")
