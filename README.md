@@ -82,7 +82,7 @@ bentoml build
 ### 4. Iniciar a API com BentoML
 
 ```bash
-bentoml serve service:svc
+bentoml serve modelo_rf_v0:latest
 ```
 
 A API ficará disponível em:
@@ -91,8 +91,15 @@ A API ficará disponível em:
 
 ## Executar a Interface com Streamlit
 
+ 1. Instalar as dependências
+
 ```bash
-streamlit run app.py
+pip install -r requirements.txt
+```
+2. Iniciar o Streamlit:
+   
+```bash
+streamlit run client_app.py
 ```
 
 A interface ficará disponível em:
